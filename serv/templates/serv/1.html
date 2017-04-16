@@ -1,0 +1,44 @@
+<!doctype html>
+<head>
+<style>
+a:hover {
+    background-color: #6f0f02;
+}
+a, u{
+	text-decoration: :none !important;
+}
+</style>
+</head>
+<body>
+<div style="
+	background-color:#4c1613;
+	height:100%;
+	width:30%;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:100;
+	margin:auto;" >
+			<br><br><br>
+			<p style="text-align:center"><font color="#ffffff" size="8" face="verdana"> VOLT </font></p><br><br><br><br><br><br><br>
+			<p  style="text-align:right"><a href="{% url 'homePage' %}""><font color="#ffffff" size="4" face="verdana"> home </font></a></p><br>
+			<p  style="text-align:right"><a href="{% url 'regis' %}""><font color="#ffffff" size="4" face="verdana"> Register </font></a></p><br>
+			<p style="text-align:right"><a href="/"><font color="#ffffff" size="4" face="verdana"> about </font></a></p><br>
+			<p style="text-align:right"><a href="/"><font color="#ffffff" size="4" face="verdana"> our 
+			</font></a></p>
+			</div>
+<div style="
+	height:60%;
+	width:30%;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;" >
+			{% block content %}
+
+			{% endblock %}
+</div>
+</body>
